@@ -115,7 +115,7 @@ public class SimpleStreamExamples {
         List<Integer> numbers = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
         List<Integer> evens = numbers.stream()
-                .filter(n -> n % 2 == 0)   // Predicate<Integer>: true = keep
+                .filter(n -> n % 2 == 0)// Predicate<Integer>: true = keep
                 .toList();
         check("even numbers", evens, List.of(2, 4, 6, 8, 10));
 
